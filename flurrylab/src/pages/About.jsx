@@ -7,19 +7,25 @@ import Section from '../components/design/Section';
 export default function About() {
   return (
     <Box>
-      <Section bgcolor="#ffffff" id="about">
+      <Section id="about" pb={4}>
         <Title>关于我们</Title>
-        <Typography sx={{ mb: 4 }}>
-          FlurryLab 致力于帮助个人与专业成长者在社区中找到属于自己的导师与伙伴。
+        <Typography align="center" sx={{ maxWidth: 700, mx: 'auto', mb: 1 }}  color='black' pt={0}>
+        FlurryLab 是一个致力于连接真实关系的成长平台
+        <br />
+        提供学习资源、导师指导与社区支持，帮助你在成长道路上更进一步
+        {/*
+          <br />
+          <br />
+          <br />
+          A community-driven platform that empowers personal and professional growth through real connection, mentorship, and resources.*/}
         </Typography>
       </Section>
-
-      <Section bgcolor="#F2F4F4">
+      <Section pt={4}>
         <Title>导师介绍</Title>
-        <Stack direction={{ xs: 'column', md: 'row' }} spacing={4} justifyContent="center">
-          <FlurryCard title="导师 A" content="海外高校研究员，擅长 CS / AI / 留学指导" />
-          <FlurryCard title="导师 B" content="跨国科技公司工程师，支持职业规划与简历提升" />
-          <FlurryCard title="导师 C" content="社区创始人，专注连接资源与心理成长" />
+        <Stack direction={{ xs: 'column', md: 'row' }} spacing={4} justifyContent="center" color='secondary' pt={0}>
+          <FlurryCard title="导师 Claire" content="FAANG Senior MLE，擅长 CS / AI / 留学指导" />
+          <FlurryCard title="导师 Jules" content="FAANG Senior SDE，文转码，支持职业规划与简历提升" />
+          <FlurryCard title="导师 Alan" content="FAANG Staff MLE，社区创始人，专注技术blog与心理成长" />
         </Stack>
       </Section>
     </Box>

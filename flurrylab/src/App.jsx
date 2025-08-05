@@ -12,7 +12,7 @@ export default function App() {
   return (
     <>
       <CssBaseline />
-      <Box display="flex" flexDirection="column" minHeight="100vh" bgcolor="#F2F4F4">
+      <Box display="flex" flexDirection="column" minHeight="100vh" >
         <Navbar />
         <Box component="main" flexGrow={1}>
           <Routes>

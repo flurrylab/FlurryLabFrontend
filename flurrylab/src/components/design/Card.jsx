@@ -6,8 +6,8 @@ export default function FlurryCard({ title, content }) {
   return (
     <Card sx={{ p: spacing.cardPadding, borderRadius: 3, boxShadow: 3 }}>
       <CardContent>
-        <Typography variant="h6" sx={{ mb: 1 }}>{title}</Typography>
-        <Typography variant="body2">{content}</Typography>
+        <Typography variant="h6" sx={{ mb: 1 }} color='secondary'>{title}</Typography>
+        <Typography variant="body2" color='secondary'>{content}</Typography>
       </CardContent>
     </Card>
   );

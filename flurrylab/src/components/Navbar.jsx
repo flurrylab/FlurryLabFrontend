@@ -11,9 +11,9 @@ export default function Navbar() {
   const handleClose = (setter) => () => setter(null);
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: '#C5D3EB' }}>
+    <AppBar position="static" sx={{ fontFamily: 'heading',boxShadow: 'none' }}>
       <Toolbar>
-        <Typography variant="h6" sx={{ flexGrow: 1, color: '#1B345D' }}>
+        <Typography variant="h6" sx={{ flexGrow: 1, color: 'black',textDecoration: 'none',}} component={Link} to="/" > 
           FlurryLab
         </Typography>
 
@@ -27,7 +27,7 @@ export default function Navbar() {
           About
         </Button>
         <Menu anchorEl={anchorElAbout} open={Boolean(anchorElAbout)} onClose={handleClose(setAnchorElAbout)} MenuListProps={{ onMouseLeave: handleClose(setAnchorElAbout) }}>
-          <MenuItem component={Link} to="/about#about-us" onClick={handleClose(setAnchorElAbout)}>关于我们</MenuItem>
+          <MenuItem component={Link} to="/about#about-us" onClick={handleClose(setAnchorElAbout)} >关于我们</MenuItem>
           <MenuItem component={Link} to="/about#mentors" onClick={handleClose(setAnchorElAbout)}>导师介绍</MenuItem>
           <MenuItem component={Link} to="/about#sharing" onClick={handleClose(setAnchorElAbout)}>互动分享</MenuItem>
         </Menu>
@@ -36,6 +36,7 @@ export default function Navbar() {
           color="inherit"
           onMouseEnter={handleOpen(setAnchorElContact)}
           onMouseDown={() => navigate('/contact')}
+      
         >
           Contact
         </Button>
