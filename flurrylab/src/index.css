@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* 全局变量 */
+:root {
+  --bg-color: #F2F4F4;
+  --primary-color: #C5D3EB;
+  --accent-color: #1B345D;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* 通用 Reset */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-color);
+}
+
+/* 自定义字体类 */
+.heading-font {
+  font-family: "Rubik Bubbles", system-ui, sans-serif;
+}
+
+/* 全站按钮风格（可选） */
+button {
+  border-radius: 6px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--accent-color);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #2c497b;
+}
